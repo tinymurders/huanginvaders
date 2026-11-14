@@ -310,4 +310,5 @@ for(let[id,key]of[['left','ArrowLeft'],['right','ArrowRight'],['fire','fire']]){
 canvas.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'||state!=='playing')return;canvas.setPointerCapture(e.pointerId);player.x=clamp((e.clientX-canvas.getBoundingClientRect().left)/canvas.clientWidth*W,23,W-23);keys.add('fire')});canvas.addEventListener('pointermove',e=>{if(e.buttons&&e.pointerType!=='mouse'&&state==='playing')player.x=clamp((e.clientX-canvas.getBoundingClientRect().left)/canvas.clientWidth*W,23,W-23)});for(let ev of['pointerup','pointercancel'])canvas.addEventListener(ev,()=>keys.delete('fire'));
 updateHUD();requestAnimationFrame(frame);
 })();
-</script></body></html>
+</script><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4fdc4c8d666d4737886a0898ae3d5811"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
